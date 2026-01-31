@@ -1,0 +1,67 @@
+# ====================
+# General
+# ====================
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.tmp
+.env
+.env.local
+.env.*.local
+
+# ====================
+# Flutter / Dart
+# ====================
+apps/mobile/.dart_tool/
+apps/mobile/.flutter-plugins
+apps/mobile/.flutter-plugins-dependencies
+apps/mobile/.packages
+apps/mobile/build/
+apps/mobile/.metadata
+apps/mobile/*.iml
+apps/mobile/.idea/
+apps/mobile/android/.gradle/
+apps/mobile/android/local.properties
+apps/mobile/android/app/debug/
+apps/mobile/android/app/profile/
+apps/mobile/android/app/release/
+apps/mobile/ios/Pods/
+apps/mobile/ios/.symlinks/
+apps/mobile/ios/Flutter/Flutter.framework
+apps/mobile/ios/Flutter/Flutter.podspec
+apps/mobile/ios/Flutter/Generated.xcconfig
+apps/mobile/ios/Flutter/app.flx
+apps/mobile/ios/Flutter/App.framework
+apps/mobile/ios/ServiceDefinitions.json
+apps/mobile/ios/Runner/GeneratedPluginRegistrant.*
+apps/mobile/coverage/
+apps/mobile/.fvm/
+apps/mobile/pubspec.lock
+
+# ====================
+# Python / FastAPI
+# ====================
+services/api/venv/
+services/api/.venv/
+services/api/__pycache__/
+services/api/**/__pycache__/
+services/api/*.pyc
+services/api/.pytest_cache/
+services/api/.mypy_cache/
+services/api/.ruff_cache/
+services/api/htmlcov/
+services/api/.coverage
+services/api/*.egg-info/
+services/api/dist/
+services/api/build/
+
+# ====================
+# Secrets
+# ====================
+*.pem
+*.key
+*.p12
+secrets/
+credentials.json
+service-account.json
