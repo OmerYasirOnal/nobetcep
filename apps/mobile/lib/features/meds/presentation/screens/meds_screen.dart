@@ -119,7 +119,8 @@ class MedsScreen extends ConsumerWidget {
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('İlacı Sil'),
-        content: Text('${med.name} ilacını silmek istediğinizden emin misiniz?'),
+        content:
+            Text('${med.name} ilacını silmek istediğinizden emin misiniz?'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),

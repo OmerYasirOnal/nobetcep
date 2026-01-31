@@ -16,7 +16,8 @@ class ChatMessage {
 
   factory ChatMessage.fromJson(Map<String, dynamic> json) {
     return ChatMessage(
-      id: json['id'] as String? ?? DateTime.now().millisecondsSinceEpoch.toString(),
+      id: json['id'] as String? ??
+          DateTime.now().millisecondsSinceEpoch.toString(),
       content: json['content'] as String? ?? json['response'] as String,
       isUser: json['is_user'] as bool? ?? false,
       timestamp: json['timestamp'] != null

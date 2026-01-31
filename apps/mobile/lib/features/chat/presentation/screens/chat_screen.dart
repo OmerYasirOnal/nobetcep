@@ -209,7 +209,8 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('Sohbeti Temizle'),
-        content: const Text('Tüm mesajlar silinecek. Devam etmek istiyor musunuz?'),
+        content:
+            const Text('Tüm mesajlar silinecek. Devam etmek istiyor musunuz?'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),

@@ -36,7 +36,8 @@ class _PharmacyScreenState extends ConsumerState<PharmacyScreen> {
           IconButton(
             icon: Icon(
               _useLocation ? Icons.location_on : Icons.location_off,
-              color: _useLocation ? Theme.of(context).colorScheme.primary : null,
+              color:
+                  _useLocation ? Theme.of(context).colorScheme.primary : null,
             ),
             onPressed: () {
               setState(() {
@@ -150,7 +151,8 @@ class _PharmacyScreenState extends ConsumerState<PharmacyScreen> {
                     Text('Hata: $error'),
                     const SizedBox(height: 8),
                     ElevatedButton(
-                      onPressed: () => ref.invalidate(pharmaciesProvider(query)),
+                      onPressed: () =>
+                          ref.invalidate(pharmaciesProvider(query)),
                       child: const Text('Tekrar Dene'),
                     ),
                   ],

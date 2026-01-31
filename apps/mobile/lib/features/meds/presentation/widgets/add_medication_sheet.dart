@@ -34,7 +34,8 @@ class _AddMedicationSheetState extends State<AddMedicationSheet> {
     final med = widget.medication;
     _nameController = TextEditingController(text: med?.name ?? '');
     _doseController = TextEditingController(text: med?.dose ?? '');
-    _instructionsController = TextEditingController(text: med?.instructions ?? '');
+    _instructionsController =
+        TextEditingController(text: med?.instructions ?? '');
 
     if (med != null) {
       _scheduleType = med.scheduleType;
@@ -285,7 +286,8 @@ class _AddMedicationSheetState extends State<AddMedicationSheet> {
     if (!_formKey.currentState!.validate()) return;
 
     final medication = Medication(
-      id: widget.medication?.id ?? DateTime.now().millisecondsSinceEpoch.toString(),
+      id: widget.medication?.id ??
+          DateTime.now().millisecondsSinceEpoch.toString(),
       name: _nameController.text,
       dose: _doseController.text.isEmpty ? null : _doseController.text,
       instructions: _instructionsController.text.isEmpty

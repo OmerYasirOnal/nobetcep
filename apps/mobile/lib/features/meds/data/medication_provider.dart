@@ -90,7 +90,8 @@ class MedicationsNotifier extends StateNotifier<List<Medication>> {
         final hour = int.parse(parts[0]);
         final minute = int.parse(parts[1]);
 
-        var scheduledTime = DateTime(now.year, now.month, now.day, hour, minute);
+        var scheduledTime =
+            DateTime(now.year, now.month, now.day, hour, minute);
 
         // Schedule for each day in the window
         while (scheduledTime.isBefore(windowEnd)) {

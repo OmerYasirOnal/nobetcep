@@ -58,10 +58,11 @@ class ChatBubble extends StatelessWidget {
                   ),
                   if (message.hasDisclaimer) ...[
                     const SizedBox(height: 8),
-                      Container(
+                    Container(
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: theme.colorScheme.errorContainer.withValues(alpha: 0.5),
+                        color: theme.colorScheme.errorContainer
+                            .withValues(alpha: 0.5),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Row(
