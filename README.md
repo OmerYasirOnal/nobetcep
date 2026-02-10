@@ -1,3 +1,4 @@
+```markdown
 # NobetCep 💊
 
 Türkiye'deki nöbetçi eczaneleri bulmanızı ve ilaç hatırlatmalarınızı yönetmenizi sağlayan mobil uygulama.
@@ -149,3 +150,4 @@ Bu proje MIT lisansı altında lisanslanmıştır.
 ## 📞 İletişim
 
 - GitHub Issues: [Sorun bildir](https://github.com/OmerYasirOnal/nobetcep/issues)
+```
